@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class ComputerFacadeTest {
 
     @Test
-    public void should_do_evewry_step_when_run_through_facade() throws Exception {
+    public void should_do_every_step_when_run_through_facade() throws Exception {
         //given
         Computer computer = new Computer();
         ComputerFacade facade = new ComputerFacade(computer);
@@ -19,5 +19,4 @@ public class ComputerFacadeTest {
         //then
         assertThat(executed, is("whooooooo beep beep vvvzzzzzzz"));
     }
-
 }
